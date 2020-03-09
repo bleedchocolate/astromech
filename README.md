@@ -36,3 +36,6 @@ Using the nRF Connect Android app, I was able to see that:
     * 0x0A040502A601
     * 0x0A040602A601  
     * 0x0A040702A601 
+* You can also change the 02 to FF to make it only respond once. 
+    
+* My own droid broadcasts this: 0x030444819208 and it seems I can have it meet another droid by copying that and optionally changing the last 4. 
