@@ -39,3 +39,19 @@ Using the nRF Connect Android app, I was able to see that:
 * You can also change the 02 to FF to make it only respond once. 
     
 * My own droid broadcasts this: 0x030444819208 and it seems I can have it meet another droid by copying that and optionally changing the last 4. 
+
+## Useful Resources
+
+* [Vince Parker](https://www.youtube.com/watch?v=liKQ0LrN9q0&t=480s) sniffed all of the signal’s around the park and talked about how to recreate them using the nFR Connect app on an android device. 
+* [Ruthsarian](https://www.youtube.com/channel/UCoaydZePyAJOQlCbkfDwHIQ) has many good videos about the droid and other Star Wars things in general. Notable Ones:
+   * He added an LED to the Droid’s Head and explained how to head works. [Link](https://www.youtube.com/watch?v=A0AJl5ipgx0&t=600s) 
+   * He added a power indicator LED to the droid’s remote control. [Link](https://www.youtube.com/watch?v=gonG7LuBkk0&t=369s) 
+   * He created a custom personality chip for the droid:
+      * [Part 0](https://www.youtube.com/watch?v=t2lm5inhGkM&t=745s)
+      * [Part 1](https://www.youtube.com/watch?v=qy98ys3AuwQ)
+      * [Part 1A - an edit](https://www.youtube.com/watch?v=9T1lsqVU0W4 )
+      * [Part 2](https://www.youtube.com/watch?v=xRQRMBJe9Gg&t=1213s)
+      * [Part 3 - R2 accessory noises/lights with custom chip](https://www.youtube.com/watch?v=SUpH8con-GQ)
+* [Dead Bothans Society](https://www.deadbothans.com/category/droids/) has a section on the droids
+   * [R2 Unit Teardown](https://www.deadbothans.com/2020/02/09/r2-unit-droid-teardown-video-photos/) 
+   * [R2 Accessory Teardown](https://www.deadbothans.com/2019/09/16/droid-accessory-teardown/) 
