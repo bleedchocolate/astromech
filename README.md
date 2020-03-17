@@ -12,13 +12,13 @@ The droid reacts to various Bluetooth signals around the park. You can mimic the
 
 | Signal         | Locations      |
 | -------------  |:-------------:|
-| 0x0A040102A601 | Marketplace, Droid Depot, Dok-Ondar's Den of Antiquities |
-| 0x0A040202A601 | Droid Play Area      |
-| 0x0A040302A601 | Resistance      |
-| 0x0A040402A601 |  ??? |
-| 0x0A040502A601 | Marketplace-Entrance, Droid Depot      |
-| 0x0A040602A601 | Dok-Ondar's Den of Antiquities      |
-| 0x0A040702A601 | First Order      |
+| 0x0A04**01**02A601 | Marketplace, Droid Depot, Dok-Ondar's Den of Antiquities |
+| 0x0A04**02**02A601 | Droid Play Area      |
+| 0x0A04**03**02A601 | Resistance      |
+| 0x0A04**04**02A601 |  ??? |
+| 0x0A04**05**02A601 | Marketplace-Entrance, Droid Depot      |
+| 0x0A04**06**02A601 | Dok-Ondar's Den of Antiquities      |
+| 0x0A04**07**02A601 | First Order      |
 
 ## Useful Resources
 
