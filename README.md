@@ -8,37 +8,17 @@ I *REALLY* want to hack the controller. I would love to be able to control it vi
 
 ------
 
-Using the nRF Connect Android app, I was able to see that:
-* My droid’s bluetooth address is: C4:CE:B2:2D:DC:99
-* It is advertising multiple services:
-    * Generic Access 0x1800
-        * Characteristics:
-            * Device Name (READ, WRITE) — 0x2A00
-            * Appearance (READ) — 0x2A01
-            * Peripheral Preferred Connection Parameters (READ) — 0x2A04
-    * Generic Attribute 0x1801
-        * empty
-    * Unknown Service 09b600a0-3e42-41fc-b474-e9c0c8f0c801
-        * Characteristics:
-            * Unknown Characteristic
-                * 09b600b0-3e42-41fc-b474-e9c0c8f0c801 (NOTIFY)
-            * Client Characteristic Configuration
-                * 0x2902
-            * Unknown Characteristic: 
-                * 09b600b1-3e42-41fc-b474-e9c0c8f0c801 (WRITE, WRITE NO RESPONSE)
+The droid reacts to various Bluetooth signals around the park. You can mimic the signals by broadcasting the following as manufacturer data using the nFR Connect app.
 
-* Disney’s Manufacturer Data: 0x0183
-* Data for Reaction Beacons:
-    * 0x0A040102A601 
-    * 0x0A040202A601 
-    * 0x0A040302A601 
-    * 0x0A040402A601 
-    * 0x0A040502A601
-    * 0x0A040602A601  
-    * 0x0A040702A601 
-* You can also change the 02 to FF to make it only respond once. 
-    
-* My own droid broadcasts this: 0x030444819208 and it seems I can have it meet another droid by copying that and optionally changing the last 4. 
+| Signal         | Locations      |
+| -------------  |:-------------:|
+| 0x0A040102A601 | Marketplace, Droid Depot, Dok-Ondar's Den of Antiquities |
+| 0x0A040202A601 | Droid Play Area      |
+| 0x0A040302A601 | Resistance      |
+| 0x0A040402A601 |  ??? |
+| 0x0A040502A601 | Marketplace-Entrance, Droid Depot      |
+| 0x0A040602A601 | Dok-Ondar's Den of Antiquities      |
+| 0x0A040702A601 | First Order      |
 
 ## Useful Resources
 
