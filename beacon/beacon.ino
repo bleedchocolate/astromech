@@ -37,12 +37,9 @@ void setup()
 void loop() 
 {
   delay(20000);
-  Serial.println("stopping");
-  Bluefruit.Advertising.clearData();
-  bool stopped = Bluefruit.Advertising.stop();
-  delay(20000);
-  while ( !stopped ) delay(10);
-  startAdvertising(0x02);
+  location = (location % 7) + 1;
+  startAdvertising(location);
+  stopAdvertising();
 }
 
 void startAdvertising(uint8_t location)
@@ -68,6 +65,13 @@ void startAdvertising(uint8_t location)
   Bluefruit.Advertising.setInterval(250, 250);
   Bluefruit.Advertising.setFastTimeout(30);
   Bluefruit.Advertising.start(0);
+}
+
+void stopAdvertising()
+{
+  Serial.println("Clearing Advertisement Data");
+  Bluefruit.Advertising.clearData();
+  Bluefruit.Advertising.stop();
 }
 
 void blink_timer_callback(TimerHandle_t xTimerID)
