@@ -11,7 +11,7 @@ void setup()
   Serial.begin(9600);
   while ( !Serial ) delay(10);
   
-  blinkTimer.begin(1000, blink_timer_callback);
+  blinkTimer.begin(1000, blinkTimerCallback);
   blinkTimer.start();
 
   if (!Bluefruit.begin())
@@ -30,16 +30,16 @@ void setup()
 
   Bluefruit.setName("Astromech");
   Bluefruit.setTxPower(4);
-  startAdvertising(0x01);
+  startAdvertising(location);
 
 }
 
 void loop() 
 {
-  delay(20000);
+  delay(150000);
   location = (location % 7) + 1;
-  startAdvertising(location);
   stopAdvertising();
+  startAdvertising(location);
 }
 
 void startAdvertising(uint8_t location)
@@ -74,7 +74,7 @@ void stopAdvertising()
   Bluefruit.Advertising.stop();
 }
 
-void blink_timer_callback(TimerHandle_t xTimerID)
+void blinkTimerCallback(TimerHandle_t xTimerID)
 {
   (void) xTimerID;
   digitalToggle(LED_RED);
