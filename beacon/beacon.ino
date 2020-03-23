@@ -1,11 +1,13 @@
 #include <bluefruit.h>
 #include <ble_gap.h>
 
+// Using Adafruit Feather nRF52 Bluefruit
+
 SoftwareTimer blinkTimer;
 
 void setup() 
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
   while ( !Serial ) delay(10);
   
   blinkTimer.begin(1000, blink_timer_callback);
@@ -33,6 +35,10 @@ void setup()
   Serial.println("Advertising started"); 
 }
 
+void loop() 
+{
+}
+
 void startAdv(void)
 {   
   uint8_t msd_payload[8];
@@ -52,10 +58,6 @@ void startAdv(void)
   Bluefruit.Advertising.setInterval(250, 250);    // in units of 0.625 ms
   Bluefruit.Advertising.setFastTimeout(30);      // number of seconds in fast mode
   Bluefruit.Advertising.start(0);
-}
-
-void loop() 
-{
 }
 
 void blink_timer_callback(TimerHandle_t xTimerID)
