@@ -20,6 +20,8 @@ The droid reacts to various Bluetooth signals around the park. You can mimic the
 | 0x0A04**06**02A601 | Dok-Ondar's Den of Antiquities      |
 | 0x0A04**07**02A601 | First Order      |
 
+I also created a little beacon to broadcast these signals in a loop using an [nRF52832 Bluefruit Feather](https://www.adafruit.com/product/3406) board. The [code](https://github.com/amandagrice/astromech/blob/master/beacon/beacon.ino) is in the beacon folder in this repo. Every 2.5 minutes it changes the signal it's broadcasting. 
+
 ## Useful Resources
 
 * [Vince Parker](https://www.youtube.com/watch?v=liKQ0LrN9q0&t=480s) sniffed all of the signal’s around the park and talked about how to recreate them using the nFR Connect app on an android device. 
